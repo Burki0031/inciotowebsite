@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnci Oto - Anasayfa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .gallery {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            margin-top: 40px;
+            color: #777;
+        }
+        .admin-button {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: crimson;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>İnci Oto</h1>
+        <nav>
+            <a href="#">Anasayfa</a>
+            <a href="#">Hizmetlerimiz</a>
+            <a href="#">Hakkımızda</a>
+            <a href="#">İletişim</a>
+        </nav>
+    </header>
+
+    <h2>Galeri</h2>
+    <div class="gallery">
+        <img src="uploads/ornek1.jpg" alt="Araç Görseli">
+        <img src="uploads/ornek2.jpg" alt="Araç Görseli">
+        <img src="uploads/ornek3.jpg" alt="Araç Görseli">
+        <!-- Otomatik listeleme yok, elle örnek kondu -->
+    </div>
+
+    <a class="admin-button" href="admin/login.php">🔒 Admin Girişi</a>
+
+    <footer>
+        <p>© 2025 İnci Oto. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
