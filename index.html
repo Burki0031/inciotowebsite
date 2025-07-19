@@ -1,80 +1,116 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İnci Oto - Anasayfa</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-        }
-        .gallery {
-            margin-top: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-        .gallery img {
-            width: 200px;
-            height: auto;
-            border: 2px solid #ccc;
-            border-radius: 5px;
-        }
-        footer {
-            margin-top: 40px;
-            color: #777;
-        }
-        .admin-button {
-            margin-top: 20px;
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: crimson;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>İnci Oto | Ana Sayfa</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Özel CSS (varsa) -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-    <header>
-        <h1>İnci Oto</h1>
-        <nav>
-            <a href="#">Anasayfa</a>
-            <a href="#">Hizmetlerimiz</a>
-            <a href="#">Hakkımızda</a>
-            <a href="#">İletişim</a>
-        </nav>
-    </header>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">İnci Oto</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <h2>Galeri</h2>
-    <div class="gallery">
-        <img src="uploads/ornek1.jpg" alt="Araç Görseli">
-        <img src="uploads/ornek2.jpg" alt="Araç Görseli">
-        <img src="uploads/ornek3.jpg" alt="Araç Görseli">
-        <!-- Otomatik listeleme yok, elle örnek kondu -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Hizmetlerimiz</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="support.html">Destek</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="login.html">Giriş Yap</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-sm btn-danger text-white ms-2" href="register.html">Kayıt Ol</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <a class="admin-button" href="admin/login.php">🔒 Admin Girişi</a>
+<!-- Ana İçerik -->
+<main class="container my-5">
 
-    <footer>
-        <p>© 2025 İnci Oto. Tüm hakları saklıdır.</p>
-    </footer>
+  <header class="mb-5 text-center">
+    <h1 class="display-4 fw-bold">İnci Oto'ya Hoş Geldiniz</h1>
+    <p class="lead text-muted">Profesyonel kaporta ve araç onarım hizmetlerinde lider.</p>
+  </header>
+
+  <!-- Hizmetler Öne Çıkanlar -->
+  <section id="services" class="mb-5">
+    <h2 class="mb-4 text-center">Hizmetlerimiz</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/service1.jpg" class="card-img-top" alt="Kaporta Onarımı" />
+          <div class="card-body">
+            <h5 class="card-title">Kaporta Onarımı</h5>
+            <p class="card-text">Uzman ekibimizle araç göçük ve çiziklerinizi profesyonelce onarıyoruz.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/service2.jpg" class="card-img-top" alt="Boyama Hizmeti" />
+          <div class="card-body">
+            <h5 class="card-title">Araç Boyama</h5>
+            <p class="card-text">Kaliteli boya ve modern tekniklerle aracınızın ilk günkü görünümüne kavuşmasını sağlıyoruz.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/service3.jpg" class="card-img-top" alt="Cam Değişimi" />
+          <div class="card-body">
+            <h5 class="card-title">Cam Değişimi</h5>
+            <p class="card-text">Kırık veya çatlamış camlarınız hızlı ve garantili şekilde değiştiriliyor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri Öne Çıkan -->
+  <section id="gallery" class="mb-5">
+    <h2 class="mb-4 text-center">Galeri</h2>
+    <div class="row row-cols-2 row-cols-md-4 g-3">
+      <div class="col"><img src="assets/images/gallery1.jpg" alt="Galeri 1" class="img-fluid rounded shadow-sm" /></div>
+      <div class="col"><img src="assets/images/gallery2.jpg" alt="Galeri 2" class="img-fluid rounded shadow-sm" /></div>
+      <div class="col"><img src="assets/images/gallery3.jpg" alt="Galeri 3" class="img-fluid rounded shadow-sm" /></div>
+      <div class="col"><img src="assets/images/gallery4.jpg" alt="Galeri 4" class="img-fluid rounded shadow-sm" /></div>
+    </div>
+    <div class="text-center mt-3">
+      <a href="gallery.html" class="btn btn-primary">Tüm Galeriye Bak</a>
+    </div>
+  </section>
+
+  <!-- Destek / İletişim -->
+  <section id="contact" class="mb-5 text-center">
+    <h2>İletişime Geçin</h2>
+    <p>Bize ulaşmak veya destek almak için <a href="contact.html">buraya tıklayın</a>.</p>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  &copy; 2025 İnci Oto | Tüm Hakları Saklıdır.
+</footer>
+
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
